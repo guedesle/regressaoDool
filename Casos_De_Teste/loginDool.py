@@ -5,8 +5,8 @@ from seleniumbase import SB, BaseCase
 class LoginDoolTest(BaseCase):
     def test_login_to_dool(self):
         # Obtém as credenciais a partir das variáveis de ambiente ou usa valores padrão para teste
-        username = os.environ.get("DOOL_USERNAME", "luciano.le")
-        password = os.environ.get("DOOL_PASSWORD", "rede@2026")
+        username = os.environ.get("DOOL_USERNAME", "meu_usuario")
+        password = os.environ.get("DOOL_PASSWORD", "minha_senha")
         
         # Abre a página de login
         self.open("http://dool.egba.ba.gov.br")
